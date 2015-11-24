@@ -1,0 +1,192 @@
+/* 
+ * 	Core Owl Carousel CSS File
+ *	v1.3.2
+ */
+
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+/* display none until init */
+.owl-carousel{
+    display: none;
+    position: relative;
+    width: 100%;
+    -ms-touch-action: pan-y;
+}
+.owl-carousel .owl-wrapper{
+    display: none;
+    position: relative;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight{
+    -webkit-transition: height 500ms ease-in-out;
+    -moz-transition: height 500ms ease-in-out;
+    -ms-transition: height 500ms ease-in-out;
+    -o-transition: height 500ms ease-in-out;
+    transition: height 500ms ease-in-out;
+}
+
+.owl-carousel .owl-item{
+    float: left;
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div{
+    cursor: pointer;
+}
+.owl-controls {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* mouse grab icon */
+.grabbing { 
+    cursor:url(grabbing.png) 8 8, move;
+}
+
+/* fix */
+.owl-carousel  .owl-wrapper,
+.owl-carousel  .owl-item{
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility:    hidden;
+    -ms-backface-visibility:     hidden;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+}
+
+
+.clink-here .owl-pagination{
+    position: absolute;top: -10px;left: 0px;right: 0px;
+}
+.clink-here .owl-page{
+    display: inline-block;
+    zoom: 1;
+    *display: inline;/*IE7 life-saver */
+}
+.clink-here .owl-page span{
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin: 5px 0px;
+    filter: Alpha(Opacity=50);/*IE7 fix*/
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background: #cccccc;
+    margin: 0px 3px;
+    transition: 0.3s;
+}
+.clink-here .owl-page.active span,
+.clink-here .owl-page:hover span{
+    filter: Alpha(Opacity=100);
+    opacity: 1;
+    background: #00bad2;
+}
+
+.featured-slide .owl-pagination{
+    /*    position: absolute;  bottom: 0px;left: 0px;right: 0px;*/
+    margin: 40px 0px 10px;
+}
+.featured-slide .owl-page{
+    display: inline-block;
+    zoom: 1;
+    *display: inline;/*IE7 life-saver */
+}
+.featured-slide .owl-page span{
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin: 5px 0px;
+    filter: Alpha(Opacity=50);/*IE7 fix*/
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background: #cccccc;
+    margin: 0px 3px;
+    transition: 0.3s;
+}
+.featured-slide .owl-page.active span,
+.featured-slide .owl-page:hover span{
+    filter: Alpha(Opacity=100);
+    opacity: 1;
+    background: #00bad2;
+}
+
+
+.testihome-slider .owl-pagination{
+    /*    position: absolute;  bottom: 0px;left: 0px;right: 0px;*/
+    margin: 10px 0px;
+}
+.testihome-slider .owl-page{
+    display: inline-block;
+    zoom: 1;
+    *display: inline;/*IE7 life-saver */
+}
+.testihome-slider .owl-page span{
+    display: block;
+    width: 25px;
+    height: 5px;
+    margin: 5px 0px;
+    background: rgba(255,255,255,0.20);
+    margin: 0px 3px;
+    transition: 0.3s;
+}
+.testihome-slider .owl-page.active span,
+.testihome-slider .owl-page:hover span{
+    filter: Alpha(Opacity=100);
+    opacity: 1;
+    background: #00bad2;
+}
+
+/* If PaginationNumbers is true */
+
+.home_slider .owl-next {
+    position: absolute;
+    font-size: 20px;
+    padding: 10px 12px;
+    color: #fff;
+    top: 270px;
+    height: 40px;
+    width: 40px;
+    right: -35px;;
+    border-radius:50%;
+    background: #5cbae5;
+    transition: 0.3s;
+}
+
+.home_slider .owl-prev {
+    position: absolute;
+    font-size: 20px;
+    padding: 10px 12px;
+    color: #fff;
+    top: 270px;
+    left: -35px;
+    height: 40px;
+    width: 40px;
+    border-radius:50%;
+    background: #5cbae5;
+    transition: 0.3s;
+}
+.home_slider .owl-prev:hover{
+    color: #5cbae5;
+    background: #fff;
+}
+.home_slider .owl-next:hover{
+    color: #5cbae5;
+    background: #fff;
+}
