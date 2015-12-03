@@ -53,6 +53,29 @@ input[type="submit"]
     width: 100%;
     display: inline-block;
 }
+.con_info {
+  display: inline-block;
+  padding: 76px 0;
+}
+.con_info ul{
+	display:inline-block;
+	padding:0px;
+	margin:0px;
+	}
+	.con_info ul li{
+	display:inline-block;
+	list-style: none;
+	}
+	.con_info ul li a{
+	display:inline-block;
+	color :#fff;
+	}
+	.con_info ul li a .fa{
+	margin-right:5px;
+}
+.pull-right.con_info a:hover {
+  color: #2E9ED0;
+}
 
 /*=================
         SLIDER
@@ -201,6 +224,21 @@ input[type="submit"]
     display: inline-block;
     width: 100%;
 }
+.success {
+    background: green none repeat scroll 0 0;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px;
+}
+.error{
+    background: red none repeat scroll 0 0;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px;
+}
+.instructions_btn {
+    display: none;
+}
 /*=================
         RESPONSIVE
 ==================*/
@@ -253,6 +291,34 @@ input[type="submit"]
 
 }
 
-@media screen and (max-width:360px){
-
+@media screen and (max-width:479px){
+    .instructions_btn {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    .instructions_content
+    {
+        display: none;
+    }
+    .logo {
+  margin: 0;
+  width: 100% !important;
+  display: inline-block;
+  text-align: center;
+  padding:10px 0px;
+}
+    .logo img {
+  display: inline-block;
+  height: auto;
+  width: 175px;
+}
+.con_info {
+  display: inline-block;
+  padding: 18px 0;
+  text-align: center;
+  width: 100%;
+}
+.col-xs-6 {
+  width: 100% !important;
+}
 }
